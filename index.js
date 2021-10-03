@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     
     
-    if ("geolocation" in navigator) {
+    if (navigator.geolocation) {
         console.log("geolocation available");
         navigator.geolocation.getCurrentPosition(success, error, options);
     } else {
