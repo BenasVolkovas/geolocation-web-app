@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(lat, lon);
         document.getElementById("lat").textContent = lat;
         document.getElementById("lon").textContent = lon;
-        const mymap = L.map("mymap").setView([lat, lon], 15);
+        const mymap = L.map("mymap").setView([lat, lon], 5);
         const attribution =
             '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
         const tileUrl =
