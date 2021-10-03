@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     const success = (position) => {
+        console.log(position);
         lat = position.coords.latitude;
         lon = position.coords.longitude;
         console.log(lat, lon);
