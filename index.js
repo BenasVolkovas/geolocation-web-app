@@ -15,8 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
             const tiles = L.tileLayer(tileUrl, { attribution });
             tiles.addTo(mymap);
             L.marker([lat, lon]).addTo(mymap);
-        });
+        }, (error) => {
+            document.getElementById("error").textContent = error;
+        };
     } else {
-        console.log("geolocation not available");
+        document.getElementById("error").textContent = "geolocation not available";
     }
 });
