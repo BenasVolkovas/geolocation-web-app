@@ -17,8 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
             L.marker([lat, lon]).addTo(mymap);
         }, (error) => {
             document.getElementById("error").textContent = error;
+            console.log(error);
         };
     } else {
         document.getElementById("error").textContent = "geolocation not available";
+        console.log("geolocation not available");
     }
 });
