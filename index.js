@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-	navigator.geolocation.getCurrentPosition(geoSuccess, geoError, geoOptions);
 	if ('geolocation' in navigator) {
 		console.log('geolocation available');
 		navigator.geolocation.getCurrentPosition(position => {
