@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			lon = position.coords.longitude;
 			console.log(lat, lon);
 			document.getElementById('lat').textContent = lat;
-			document.getElementById('long').textContent = lon;
+			document.getElementById('lon').textContent = lon;
 
 			const mymap = L.map('mymap').setView([lat, lon], 15);
 			const attribution =
